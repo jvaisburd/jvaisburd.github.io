@@ -1,0 +1,462 @@
+.logo {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 80px;
+ }
+a:link { font-family: Arial,sans-serif; font-size: 12px; text-decoration: none; color: #009F00; }
+
+.logo > * {
+  margin-left: -6px;
+  font-weight: 700;
+  display: inline-block;
+  animation-name: appear;
+  animation-duration: .01s;
+  animation-fill-mode: both;
+}
+.logo > *:nth-of-type(1) {
+  animation-delay: 1s
+}
+.logo > *:nth-of-type(2) {
+  animation-delay: 1.4s
+}
+.logo > *:nth-of-type(3) {
+  animation-delay: 1.7s
+}
+.logo > *:nth-of-type(4) {
+  animation-delay: 2s
+}
+.logo > *:nth-of-type(5) {
+  animation-delay: 2.4s
+}
+.logo > *:nth-of-type(6) {
+  animation-delay: 2.7s
+}
+.logo > *:nth-of-type(7) {
+  animation-delay: 3s
+}
+.logo > *:nth-of-type(8) {
+  animation-delay: 3.4s
+}
+.logo > *:nth-of-type(9) {
+  animation-delay: 3.7s
+}
+
+@keyframes appear {
+  from {
+    font-size: 0em;
+  }
+  to {
+    font-size: 1em;
+  }
+}
+.blink {
+  font-size: 1.5em;
+  font-weight: 400;
+  display: inline-block;
+  visibility: visible;
+  width: auto;
+  animation-name: flash;
+  animation-duration: .8s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+@charset "utf-8";
+* {
+  /* Reset Style to keep browsers from imposing another setting. */
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+img,
+object,
+embed,
+video {
+  max-width: 100%;
+}
+
+.gridContainer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 87.36%;
+  padding-left: 1.82%;
+  padding-right: 1.82%;
+}
+
+#Wrapper {
+  clear: both;
+  float: left;
+  margin-left: 0;
+  width: 100%;
+  display: block;
+}
+
+
+/*Parallax Header*/
+
+h1 {
+  text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 500%;
+  color: #ffffff;
+  letter-spacing: 1%;
+  margin: 0 0;
+  background: url("https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12717105_250294251969718_1209732696_n.jpg?ig_cache_key=MTE5NTczNzI0MTcwNTU5NTg1MA%3D%3D.2.l https://scontent.cdninstagram.com/hphotos-xtf1/t51.2885-15/s640x640/sh0.08/e35/12237413_986615204718540_808903115_n.jpg") fixed 100%;
+  padding-top: 25%;
+  padding-bottom: 25%;
+  -webkit-animation: fadein 3s;
+  /*fade in animation for the Header just to add drama*/
+  -moz-animation: fadein 5s;
+  -ms-animation: fadein 5s;
+  -o-animation: fadein 5s;
+  animation: fadein 5s;
+
+
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/*Section Two*/
+
+.parallax-section-two {
+  padding-top: 20%;
+  padding-bottom: 20%;
+  background-color: #ffffff;
+}
+
+.parallax-section-two h3 {
+  text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 50px;
+  color:  #000000;
+  letter-spacing: 1%;
+}
+
+.parallax-section-two p {
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: #000000;
+  letter-spacing: 1%;
+  padding: 10px;
+}
+
+
+/*Parallax Effect*/
+
+.parallax {
+  background-color:#ffffff;
+}
+
+
+/*Parallax Section One*/
+
+.parallax-content {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.parallax-content h2
+/*Section One Style*/
+
+{
+  text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 275%;
+  color: #000000;
+  letter-spacing: 1%;
+}
+
+.parallax-content p
+/*Section One Paragraph*/
+
+{
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: #000000;
+  padding: 10px;
+}
+
+
+/*Footer Section*/
+
+.parallax-footer {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.parallax-footer p
+/*Section One and Footer Paragraph*/
+
+{
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-align: Center;
+  color: #000000;
+  padding: 10px;
+}
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+  .gridContainer {
+    width: 90.675%;
+    padding-left: 1.1625%;
+    padding-right: 1.1625%;
+  }
+  #Wrapper {
+    clear: both;
+    float: left;
+    margin-left: 0;
+    width: 100%;
+    display: block;
+  }
+}
+
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+  .gridContainer {
+    width: 88.2%;
+    max-width: 1232px;
+    padding-left: 0.9%;
+    padding-right: 0.9%;
+    margin: auto;
+  }
+  #Wrapper {
+    clear: both;
+    float: left;
+    margin-left: 0;
+    width: 100%;
+    display: block;
+  }
+}
+
+
+
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
+html, body { background: #333 url("http://codepen.io/images/classy_fabric.png"); }
+
+.slides {
+    padding: 115;
+    width: 785px;
+    height: 200px;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: -50;
+    opacity: 0;
+    width: 900px;
+    height: 600px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 150px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+	  opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #ffffff;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+
+
+body {
+    display: inline grid;
+    flex-wrap: wrap;
+    justify-content:bottom;
+    align-items: botttom;
+    align-content:bottom;
+    height: 100vh;
+    font: 16px Roboto, sans-serif;
+    background: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.c-icon {
+    width:  36px;
+    height: 36px;
+    fill: currentColor;
+    transition: .2s;
+}
+
+.c-link--facebook:hover  { color: #3b5998 }
+.c-link--twitter:hover   { color: #55acee }
+.c-link--google:hover    { color: #dd4b39 }
+.c-link--pinterest:hover { color: #bd081c }
+.c-link--instagram:hover { color: #833ab4 }
+.c-link--snapchat:hover  { color: #fbe00f }
+.c-link--facebook:hover::after  { background: #3b5998 }
+.c-link--twitter:hover::after   { background: #55acee }
+.c-link--google:hover::after    { background: #dd4b39 }
+.c-link--pinterest:hover::after { background: #bd081c }
+.c-link--instagram:hover::after { background: #833ab4 }
+.c-link--snapchat:hover::after  { background: #fbe00f }
+
+.c-link {
+    position:bottom;
+    color: #bbb;
+}
+
+.c-link:not(:last-of-type) {
+    margin-right: 15px;
+}
+
+.c-tooltip::before,
+.c-tooltip::after {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -10px);
+    opacity: 0;
+    transition: .2s;
+}
+
+.c-tooltip::before {
+    content: '';
+    bottom: calc(100% + 2px);
+    border: solid 5px transparent;
+    border-top-color: currentColor;
+}
+
+.c-tooltip::after {
+    content: attr(aria-label);
+    bottom: calc(100% + 12px);
+    padding: .61em .93em;
+    font-size: .875rem;
+    color: white;
+    border-radius: 3px;
+}
+
+.c-tooltip:hover::before,
+.c-tooltip:hover::after {
+    opacity: 1;
+    transform: translate(-50%);
+}
+
+.pens-link-container {
+    flex-basis: 100%;
+    font-size: .9rem;
+    text-align: bottom;
+}
+
+.pens-link {
+    margin-bottom: 0;
+    background: white;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, .1);
+    border: none;
+}
+
+.slides li{
+  list-style: none;
+}
+
+ .parallax-section-two {
+   text-align: center;
+ }
